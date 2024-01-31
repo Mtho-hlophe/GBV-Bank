@@ -43,39 +43,40 @@ function displayEurope() {
     southAmericaTab.style.display = 'none'
     europeTab.style.display = 'flex'
 }
-
 var question = document.querySelectorAll('.questionDiv')
-var answer = document.querySelectorAll('.answerDiv')
 var header4 = document.querySelectorAll('h4')
 const copyrightYear = document.getElementById('copyrightYear')
 
 const cpright = new Date()
 copyrightYear.innerText = cpright.getFullYear()
 
-for( let i = 0; i < question.length; i++){
+for( let i = 0; i < header4.length; i++){
     header4[i].addEventListener('click', showAnswer)
 }
-
 function showAnswer(event) {
-
-    let id = event.target.id 
-    if(answer[id].style.display === 'none') {
-        answer[id].style.display = 'block'
-    }
-    else {
-        answer[id].style.display = 'none'
+    var answer = document.querySelectorAll('.answerDiv');
+    let id = event.target.id;
+    
+    if (answer[id] && answer[id].style) {
+        if (answer[id].style.display === 'none' || answer[id].style.display === '') {
+            answer[id].style.display = 'block';
+        } else {
+            answer[id].style.display = 'none';
+        }
     }
 }
-var appointmentDiv = document.getElementById('setAppointmentDiv')
 var headingDiv = document.querySelector('.headingDiv')
 var makeAppointmentBtn = document.querySelectorAll('#appointmentBtn')
 
 for( let i = 0; i <2; i++) {
     makeAppointmentBtn[i].addEventListener('click', showAppointmentForm)
 }
-
 function showAppointmentForm() {
-        if ( appointmentDiv.style.display === 'none') {
+
+    var appointmentDiv = document.getElementById('setAppointmentDiv')
+    if(appointmentDiv && appointmentDiv.style) {
+        
+        if ( appointmentDiv.style.display === 'none' || appointmentDiv.style.display === '') {
             appointmentDiv.style.display = 'block'
             headingDiv.style.display = 'none'
         }
@@ -83,5 +84,6 @@ function showAppointmentForm() {
             appointmentDiv.style.display = 'none'
             headingDiv.style.display = 'block'
         }
+    }        
 }
 
