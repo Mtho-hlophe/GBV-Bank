@@ -1,17 +1,19 @@
 
-var backgroundImg1 = document.getElementById('bgImage1')
-var backgroundImg2 = document.getElementById('bgImage2')
-
 setInterval( () => {
-   if(backgroundImg2.style.display == 'none') {
-        backgroundImg1.style.display = 'none'
-        backgroundImg2.style.display = 'block'
-    }
-    else{
-        backgroundImg1.style.display = 'block'
-        backgroundImg2.style.display = 'none'
-    }
+    var backgroundImg1 = document.getElementById('bgImage1')
+    var backgroundImg2 = document.getElementById('bgImage2')
+    
+    if( backgroundImg1.style && backgroundImg2.style && backgroundImg1 && backgroundImg2 ) {
         
+        if( backgroundImg2.style.display === 'none' || backgroundImg2.style.display === '' ) {
+            backgroundImg1.style.display = 'none'
+            backgroundImg2.style.display = 'block'
+        }
+        else{
+            backgroundImg1.style.display = 'block'
+            backgroundImg2.style.display = 'none'
+        }
+    }            
 },5000)
 
 var asiaTab = document.querySelector('.asia')
