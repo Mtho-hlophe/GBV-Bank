@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: oldlace;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+header img {
+    width: 70px;
+    height: 70px;   
+}
+.headingDiv {
+    margin: 20px;
+    height: 100vh;
+    background-color: grey;
+    animation: zoom 3.5s;
+}
+@keyframes zoom {
+    from{margin-top: 20%;
+         opacity: .2;}
+    to{margin-left: 20px;
+       opacity: 1;}
+}
+#bgImage1 {
+    background-image: url('photo-1497215728101-856f4ea42174.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    animation: backgroundSize 5s;
+}
+#bgImage2 {
+    background-image: url('images - 2024-01-30T092317.701.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+    transition: 2s;
+    animation: backgroundSize 5s;
+}
+@keyframes backgroundSize{
+    from{background-size: 100% 100%;}
+    to{background-size: 120% 120%;}
+}
+.headingDiv aside {
+    position: absolute;
+    margin: 25% 0% 0% 30% ;
+    color: brown;
+    z-index: 1;
+    animation: dropWords 2.5s ;    
+}
+@keyframes dropWords {
+    from{margin-top: 10%;
+         opacity: .2;}
+    to{margin-top: 25%;
+       opacity: 1;}
+}
+#appointmentBtn {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .5s;
+}
+#appointmentBtn:hover {
+    background-color: blue;
+}
+#homeBtns {
+    position: absolute;
+    margin: 85% 0% 0% 10%;
+    bottom: 0;
+    z-index: 1;
+}
+#btn1 {
+    background-color: red;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 6px;
+    margin-bottom: 5%;    
+}
+#btn2 {
+    background-color: white;
+    padding: 20px 30px;
+    color: black;
+    border-radius: 6px;
+}
+#section1 .div1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+#section1 .div2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+#section1 .div2 #backDiv {    
+    position: absolute;
+    z-index: -1;
+    height: 300px;
+    width: 33%;
+    background-color: gainsboro;
+    border-radius: 50% 120% 0% 50%;
+    margin: 0% 33%;
+}
+#section2 {
+    margin-top: 20px;
+    background-image: url('IMG_20240130_135702.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: white;
+}
+#section2 .div1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15%;
+}
+#section2 .div1 img {
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+}
+#section2 .div2 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 25%;
+    padding: 30px;
+}
+#section2 .div2 div {
+    padding: 20px;
+    background: ghostwhite;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#section2 .div3 {
+    padding: 30px;
+    background-color: rgba(110,10,70,.5);
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+    box-shadow: 5px 5px 16px darkslategray;
+    
+}
+#section2 .div3 #outerDiv {
+    background-color: grey;
+    height: 10px;
+    width: 100%;
+}
+#section2 .div3 #innerDiv {
+    height: 10px;
+    width: 1%;
+    background-color: red;
+    transition: 1.5s;
+}
+#section2 .div3:hover{
+    #innerDiv{
+        width: 100%;
+    }
+}
+#section2 button {
+    margin: 30px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 25%;
+}
+#section3 .div1 {
+    margin: 20px 0px;
+    text-align: center;
+}
+#section3 #bottomScrollDiv {
+border: 1px solid bisque;
+    margin: 10px 33%;
+    width: 33%;
+    scroll-behavior: smooth;
+    display: flex;
+    overflow: auto;    
+}
+#section3 #bottomScrollDiv div{
+    margin: 0px 20px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: .5s;
+}
+#section3 #bottomScrollDiv div:hover{
+    background-color: grey;
+}
+#section3 ul {
+    width: 50%;
+    margin: 10px 25% 0px 25%;
+    background-color: blanchedalmond;
+    list-style-type: none;
+}
+#section3 ul li {
+    padding: 20px 40px;
+}
+#section3 .div {
+    display: flex;
+    width: 50%;
+    margin: 0px 25%;
+    align-items: center;
+}
+#section3 .div .div1{
+    background-color: black;
+    padding: 40px 20px;
+    color: red;
+}
+#section3 .div .div2 {
+    background-image: url('images - 2024-01-30T191234.489.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 223px;
+}
+#section4 {
+    background-image: url('IMG_20240130_195839.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 30px;
+}
+#section4 .div1 {
+    text-align: center;
+    padding: 30px;
+}
+#section4 .div2 {
+    display: flex;
+    justify-content: space-around;
+}
+#section4 .div2 h2 {
+    padding: 20px 30px; 
+    margin-bottom: 50px;
+    border: 2px solid brown;
+    background-color: rgba(10,10,10,.5);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+#section4 .div2 h2:hover {
+    background-color: rgba(10,10,10,1);
+}
+#section4 .div3 {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    flex-wrap: wrap;
+}
+#section4 .countryDiv {
+    width: 140px;
+    padding: 10px 30px;
+}
+.countryDiv ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+#section4 .countryDiv img {
+    height: 100px;
+    width: 130px;
+    margin-bottom: 10px;
+}
+#section4 .africa {
+    display: none;
+    animation: opacity 2s;
+}
+#section4 .southAmerica {
+    display: none;
+    animation: opacity 2s;
+}
+#section4 .asia{
+    display: none;
+    animation: opacity 2s;
+}
+#section4 .europe{
+    animation: opacity 2s;
+}
+@keyframes opacity {
+    from{opacity: .2;}
+    to{opacity: 1;}
+}
+#section5 {
+    padding-top: 30px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#section5 .div1 {
+    margin-bottom: 50px;
+}
+#section5 .questionDiv {
+    background-color: bisque;
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px 0px;
+    color: black;
+    box-shadow: 3px 3px 8px grey;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#section5 .questionDiv .answerDiv {
+    display: none;
+    background-color: grey;
+    color: blue;
+    border-radius: 5px;
+}
+#section5 form {
+    text-align: left;
+    margin-left: 25%;
+    padding-top: 20px;
+}
+#section5 form input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+#section5 form textarea {
+    width: 30%;
+    height: 200px;
+    margin-top: 10px;
+    border: none;
+    
+}
+#section5 form button {
+    background-color: rosybrown;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    color: green;
+    font-weight: 600;
+}
+footer {
+    background: linear-gradient(45deg, black, grey);
+    width: 100%;
+    color: brown;   
+    margin-left: 0%;
+    text-align: center;
+}
+footer .list{
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+footer .div1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .social-links img{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+footer .social-links {
+    margin-bottom: 40px;
+}
+#logo {
+    width: 200px; 
+    height:70px;
+}
+
+/* mobile styling, maybe some tablets too */
+
+@media( max-width : 540px ){
+    
+#logo {
+    width: 100px;
+    height: 50px;
+}
+header img {
+    width: 50px;
+    height: 50px;   
+}
+#homeBtns {
+    margin: 0% 0% -20% 30%;
+}
+#section2 .div2 div {
+    padding: 6px 5px;
+}
+#section2 .div2 {
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+}
+#section4 .div2 {
+    flex-wrap: wrap;
+}
+#section3 #bottomScrollDiv {
+    margin: 10px 15%;
+    width: 70%;
+}
+#section3 ul {
+    width: 80%;
+    margin: 10px 10% 0px 10%;
+}
+#section3 ul li {
+    padding: 20px 0px 20px 30px;
+}
+#section3 .div2 {
+    display: none;
+}
+#section1 .div1 {
+    font-size: 1rem;
+}
+#section1 .div1 {
+    font-size: 1rem;
+}
+
+}
