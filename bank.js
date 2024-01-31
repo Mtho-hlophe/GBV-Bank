@@ -66,4 +66,22 @@ function showAnswer(event) {
         answer[id].style.display = 'none'
     }
 }
+var appointmentDiv = document.getElementById('setAppointmentDiv')
+var headingDiv = document.querySelector('.headingDiv')
+var makeAppointmentBtn = document.querySelectorAll('#appointmentBtn')
+
+for( let i = 0; i <2; i++) {
+    makeAppointmentBtn[i].addEventListener('click', showAppointmentForm)
+}
+
+function showAppointmentForm() {
+        if ( appointmentDiv.style.display === 'none') {
+            appointmentDiv.style.display = 'block'
+            headingDiv.style.display = 'none'
+        }
+        else {
+            appointmentDiv.style.display = 'none'
+            headingDiv.style.display = 'block'
+        }
+}
 
