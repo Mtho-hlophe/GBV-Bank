@@ -426,6 +426,10 @@ header img {
 #section4 .div2 {
     flex-wrap: wrap;
 }
+ section2 .div3 {
+    margin-left: 10%;
+    width: 80%;
+}
 #section3 #bottomScrollDiv {
     margin: 10px 15%;
     width: 70%;
