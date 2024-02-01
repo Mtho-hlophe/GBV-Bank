@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: oldlace;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+header img {
+    width: 70px;
+    height: 70px;   
+}
+/* --------------------- */
+#section0 {
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+#section0 .div2 {
+    padding-top: 15px;
+}
+#section0 .div1 {
+    background-image: url('images - 2024-02-01T192327.203.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section0 .div2 .cardItems {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    text-align: center;
+    padding-top: 20px;
+}
+#section0 .div2 .cardItems button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+#section0 .div2 .cardItems div {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+#section0 .div2 .cardItems div p {
+    width: 250px;
+}
+#section0 .div2 .cardItems div img {
+    width: fit-content;
+    height: 200px;
+    border-radius: 10px;
+}
+#benefits {
+    text-align: left;   
+}
+#benefits li {
+    padding: 5px;
+    margin-left: 20px;
+    color: green;
+}
+
+
+#section1 .div3 {
+    background-image: url('images - 2024-01-30T191221.743.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    margin: 10px 10%;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+#section1 .div3 form input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1.5px solid brown;
+    margin: 10px;
+}
+#section1 .div3 form button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+}
+/* --------------------- */
+footer {
+    background: linear-gradient(45deg, black, grey);
+    width: 100%;
+    color: brown;   
+    margin-left: 0%;
+    text-align: center;
+}
+footer .list{
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+footer .div1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .social-links img{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+footer .social-links {
+    margin-bottom: 40px;
+}
+#logo {
+    width: 200px; 
+    height:70px;
+}
+
+/* mobile styling, maybe some tablets too */
+
+@media( max-width : 540px ){
+    
+#logo {
+    width: 100px;
+    height: 50px;
+}
+header img {
+    width: 50px;
+    height: 50px;   
+}
+#section0 .div2 .cardItems div {
+    display: block;
+}
+
+
+}
