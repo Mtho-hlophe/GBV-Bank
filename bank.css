@@ -426,7 +426,7 @@ header img {
 #section4 .div2 {
     flex-wrap: wrap;
 }
- section2 .div3 {
+ #section2 .div3 {
     margin-left: 10%;
     width: 80%;
 }
