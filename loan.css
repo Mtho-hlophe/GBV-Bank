@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: oldlace;
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+header img {
+    width: 70px;
+    height: 70px;   
+}
+/* --------------------- */
+#section1 .div1 {
+    background-image: url('images - 2024-02-01T141634.714.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+@keyframes header {
+    from{margin-top: -20%;}
+    to{margin-top: 0px;}
+}
+#section1 .div2  {
+    text-align: center;
+    background-color: whitesmoke;
+    padding-top: 20px;
+}
+#section1 .div2 form input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1.5px solid brown;
+    margin: 10px;
+}
+#section1 .div2 form {
+    display: none;
+}
+#section1 .div2 form button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+}
+#section1 .div2  div {
+    background-color: wheat;
+    width: 70%;
+    margin: 40px 15%;
+    border-right: 2px solid red;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: .5s;
+}
+#section1 .closeBtn{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 20px 0px 0px 15%;
+    border-radius: 10px;
+}
+#section1 .closeBtn img {
+    width: 40px;
+    height: 40px;
+}
+#section1 .div2  div:hover {
+    background-color: goldenrod;
+}
+#section1 .div3 {
+    background-image: url('images - 2024-01-30T191221.743.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    margin: 10px 10%;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+#section1 .div3 form input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1.5px solid brown;
+    margin: 10px;
+}
+#section1 .div3 form button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+
+
+
+/* --------------------- */
+footer {
+    background: linear-gradient(45deg, black, grey);
+    width: 100%;
+    color: brown;   
+    margin-left: 0%;
+    text-align: center;
+}
+footer .list{
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+footer .div1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .social-links img{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+footer .social-links {
+    margin-bottom: 40px;
+}
+#logo {
+    width: 200px; 
+    height:70px;
+}
+
+/* mobile styling, maybe some tablets too */
+
+@media( max-width : 540px ){
+    
+#logo {
+    width: 100px;
+    height: 50px;
+}
+header img {
+    width: 50px;
+    height: 50px;   
+}
+
+
+}
