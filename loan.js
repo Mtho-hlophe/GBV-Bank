@@ -18,6 +18,11 @@ function applicationFormDisp() {
            enquiryForm.style.display = 'block'
        }      
 }
+const copyrightYear = document.getElementById('copyrightYear')
+
+const cpright = new Date()
+copyrightYear.innerText = cpright.getFullYear()
+
 var menuDiv = document.querySelector('#menu')
 var menuIcon = document.querySelector('#menuIcon')
 menuIcon.addEventListener('click', showMenu)
