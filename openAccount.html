@@ -7,9 +7,32 @@
     <title>Open account</title>
 </head>
 <body>
+    <div id="menu">
+        <img src="exit-full-screen.png" onclick="showMenu()">
+        <br>
+        <ul onclick="showMenu()">
+            <a href=""><li>About us</li></a>
+            <a href="loan.html"><li>Apply</li></a>
+            <a href="#call"><li>contact</li></a>
+            <li>Loan types</li>
+            <a href="loan.html"><li>Home loan</li></a>
+            <a href="loan.html"><li>Personal</li></a>
+            <a href="loan.html"><li>Vehicle Loan</li></a>
+            <li>Card types</li>
+            <a href="openAccount.html"><li>Gold card</li></a>
+            <a href="openAccount.html"><li>Blue card</li></a>
+            <a href="openAccount.html"><li>Platinum Card</li></a>
+        </ul>
+        <br>
+        <div style="display:flex; align-items: center;'">
+            <hr style="width:45%;">
+            <h4>End</h4>
+            <hr style="width:45%;">
+        </div>
+    </div>
     <header>
         <div><img id="logo" src="IMG_20240131_095904.jpg" alt=""></div>
-        <img src="bars-staggered.png"></img>
+        <img id="menuIcon" src="bars-staggered.png"></img>
     </header>
     
     <section id="section0">
@@ -171,7 +194,7 @@
             <p>1173 Joubert street</p>
             <p>2001</p>
         </div>
-        <div class="social-links">
+        <div class="social-links" id="call">
             <p>Tel: (+27) 11-4628-653</p>
             <a href=""><img src="2062095_application_chat_communication_logo_whatsapp_icon.svg.png" ></a>
             <a href=""><img src="Facebook_Logo_2023.png" alt=""></a>
