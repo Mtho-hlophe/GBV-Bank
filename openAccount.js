@@ -40,3 +40,20 @@ const copyrightYear = document.getElementById('copyrightYear')
 const cpright = new Date()
 copyrightYear.innerText = cpright.getFullYear()
 
+var menuDiv = document.querySelector('#menu')
+var menuIcon = document.querySelector('#menuIcon')
+menuIcon.addEventListener('click', showMenu)
+
+function showMenu() {
+    
+    if(menuDiv && menuDiv.style) {        
+        if ( menuDiv.style.display === 'none' || menuDiv.style.display === '') {
+            menuDiv.style.display = 'block'
+            headingDiv.style.display = 'none'
+        }
+        else {
+            menuDiv.style.display = 'none'
+            headingDiv.style.display = 'block'
+        }
+    }        
+}
