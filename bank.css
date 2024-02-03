@@ -314,9 +314,14 @@ border: 1px solid bisque;
     margin-left: 25%;
     flex-wrap: wrap;
 }
-#section4 .countryDiv {
+.countryDiv {
+    margin-top: 60px;
     width: 140px;
     padding: 10px 30px;
+}
+.countryDiv.show {
+    margin-top: 0px;
+    transition: 2s;
 }
 .countryDiv ul {
     list-style-type: none;
