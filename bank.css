@@ -460,7 +460,7 @@ header img {
     width: 80%;
 }
 .div33 {
-    margin-left: 100%;
+    margin-left: -100px;
     width: 80%;
     opacity: 0;
 }
