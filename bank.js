@@ -105,6 +105,7 @@ function showMenu() {
     }        
 }
 const elementSlider = document.querySelectorAll('.div33')
+const nationDiv = document.querySelectorAll('.countryDiv')
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach( (entry) => {
@@ -120,6 +121,8 @@ const observer = new IntersectionObserver(entries => {
 elementSlider.forEach( (element) => {
     observer.observe(element)
 })
-
+nationDiv.forEach( (element) => {
+    observer.observe(element)
+})
 
 
