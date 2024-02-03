@@ -195,14 +195,19 @@ header img {
     border-radius: 5px;
     cursor: pointer;
 }
-#section2 .div3 {
+.div33 {
     padding: 30px;
     background-color: rgba(110,10,70,.5);
     margin-top: 20px;
-    margin-left: 25%;
+    margin-left: 0%;
     width: 50%;
     box-shadow: 5px 5px 16px darkslategray;
-    
+    opacity: 0;   
+}
+.div33.show {
+    margin-left: 25%;
+    opacity: 1;
+    transition: 2s;
 }
 #section2 .div3 #outerDiv {
     background-color: grey;
@@ -450,9 +455,15 @@ header img {
 #section4 .div2 {
     flex-wrap: wrap;
 }
- #section2 .div3 {
-    margin-left: 10%;
+.div33 {
+    margin-left: 100%;
     width: 80%;
+    opacity: 0;
+}
+.div33.show {
+   margin-left: 10%; 
+   opacity: 1;
+   transition: 2s;
 }
 #section4 .div3 {
     margin-left: 10%;
