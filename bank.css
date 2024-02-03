@@ -501,7 +501,10 @@ header img {
     width: 35px;
     height: 35px;
 }
-
+#section5 .questionDiv {
+    margin-left: 12%;
+    width: 76%;
+}
 
     
 }
