@@ -209,18 +209,18 @@ header img {
     opacity: 1;
     transition: 2s;
 }
-#section2 .div3 #outerDiv {
+#section2 .div33 #outerDiv {
     background-color: grey;
     height: 10px;
     width: 100%;
 }
-#section2 .div3 #innerDiv {
+#section2 .div33 #innerDiv {
     height: 10px;
     width: 1%;
     background-color: red;
     transition: 1.5s;
 }
-#section2 .div3:hover{
+#section2 .div33:hover{
     #innerDiv{
         width: 100%;
     }
@@ -455,6 +455,10 @@ header img {
 #section4 .div2 {
     flex-wrap: wrap;
 }
+#section4 .div3 {
+    margin-left: 10%;
+    width: 80%;
+}
 .div33 {
     margin-left: 100%;
     width: 80%;
@@ -464,10 +468,6 @@ header img {
    margin-left: 10%; 
    opacity: 1;
    transition: 2s;
-}
-#section4 .div3 {
-    margin-left: 10%;
-    width: 80%;
 }
 #section3 #bottomScrollDiv {
     margin: 10px 15%;
