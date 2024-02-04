@@ -115,7 +115,7 @@ const observer = new IntersectionObserver(entries => {
         }
     })
 },{
-    threshold: .3
+    threshold: 0.2
 })
 
 elementSlider.forEach( (element) => {
