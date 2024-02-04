@@ -165,6 +165,6 @@ submitFormBtn2.addEventListener('click', () => {
  })
 let loadContainer = document.querySelector('.loadContainer')
  window.addEventListener('load', () => {
-     loadContainer.style.display = 'none'
+     setTimeout( () => loadContainer.style.display = 'none', 2500)
  })
             
