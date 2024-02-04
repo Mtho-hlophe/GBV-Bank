@@ -28,7 +28,7 @@ header img {
 #menu img {
     float: right;
     height: 30px;
-    width: 30px;
+    width: 40px;
     cursor: pointer;
 }
 #menu ul li {
@@ -40,7 +40,7 @@ header img {
     color: white;
 }
 .headingDiv {
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     height: 100vh;
     background-color: grey;
     animation: zoom 3.5s;
