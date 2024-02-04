@@ -163,4 +163,8 @@ submitFormBtn2.addEventListener('click', () => {
      
     }         
  })
-
+let loadContainer = document.querySelector('.loadContainer')
+ window.addEventListener('load', () => {
+     loadContainer.style.display = 'none'
+ })
+            
