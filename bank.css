@@ -366,13 +366,13 @@ border: 1px solid bisque;
 }
 #section4 .div3 {
     display: flex;
-    width: 50%;
-    margin-left: 25%;
+    width: 80%;
+    margin-left: 10%;
     flex-wrap: wrap;
 }
 .countryDiv {
     margin-top: 60px;
-    width: 140px;
+    width: 250px;
     padding: 10px 30px;
 }
 .countryDiv.show {
