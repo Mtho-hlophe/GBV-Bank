@@ -492,6 +492,7 @@ footer .social-links {
 /* mobile styling, maybe some tablets too */
 
 @media( max-width : 540px ){
+    
 #menu ul {
     margin-top: 20%;
 }      
@@ -517,9 +518,9 @@ header img {
     flex-wrap: wrap;
 }
 #section4 .div3 {
-    margin-left: 10%;
-    width: 80%;
-}
+    margin-left: 15%;
+    width: 70%;
+}  
 .div33 {
     margin-left: -200px;
     width: 80%;
@@ -568,4 +569,11 @@ header img {
 }
 
     
+}
+
+@media( min-width : 541px ) and ( max-width : 900px){
+    #section4 .div3 {
+    width: 70%;
+    margin-left: 15%;
+    }
 }
