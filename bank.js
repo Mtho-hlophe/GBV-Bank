@@ -125,4 +125,42 @@ nationDiv.forEach( (element) => {
     observer.observe(element)
 })
 
+var submitFormBtn1 = document.querySelector('#formBtn1')
+var submitFormBtn2 = document.querySelector('#formBtn2')
+
+submitFormBtn1.addEventListener('click', () => {
+    
+    if (validateForm()) {
+        window.open( 'formSubmit.html' )
+    }
+ 
+ function validateForm(event) { 
+     
+         if ( name.value !== '' &&  number.value !== '' && time.value !== '') {
+             return true
+         }        
+         else {
+             return false
+         }
+     
+    }         
+ })
+
+submitFormBtn2.addEventListener('click', () => {
+    
+    if (validateForm()) {
+        window.open( 'formSubmit.html' )
+    }
+ 
+ function validateForm(event) { 
+     
+         if ( name2.value !== '') {
+             return true
+         }        
+         else {
+             return false
+         }
+     
+    }         
+ })
 
