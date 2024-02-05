@@ -85,7 +85,7 @@ header img {
 #menu {
     width: 100%;
     height: 100dvh;
-    margin-top: 55px;
+    margin-top: 75px;
     position: fixed;
     background-color: tomato;
     background-attachment: fixed;
@@ -119,7 +119,7 @@ header img {
 }
 #setAppointmentDiv {
     position: fixed;
-    margin-top: 55px;
+    margin-top: 75px;
     overflow: scroll;
     display: none;
     margin-left: 0px;
@@ -503,7 +503,9 @@ footer .social-links {
 /* mobile styling, maybe some tablets too */
 
 @media( max-width : 540px ){
-    
+ #menu {
+     margin-top: 55px;
+ }   
 #menu ul {
     margin-top: 20%;
 }      
@@ -569,6 +571,7 @@ header img {
 }
 #setAppointmentDiv {
     padding: 0px 20px 10% 20%;
+    margin-top: 55px;
 }
 #setAppointmentDiv img {
     width: 35px;
