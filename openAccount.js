@@ -96,9 +96,9 @@ submitFormBtn2.addEventListener('click', () => {
      
     }         
  })
-alert('first1')
+loadContainer.style.display = 'none'
 let loadContainer = document.querySelector('.loadContainer')
  window.addEventListener('load', () => {
-     alert('second1')
+     
      setTimeout( () => loadContainer.style.display = 'none', 2500)
  })
