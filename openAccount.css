@@ -115,7 +115,7 @@ header img {
     background-position: center;
     background-size: cover;
     height: 460px;
-    margin-top: 50px;
+    margin-top: 70px;
     width: 100%;
     color: white;
     display: flex;
@@ -232,6 +232,9 @@ header img {
 #section1 .div {
     margin-top: 55px;
     height: 300px;
+}
+#section0 .div1 {
+    margin-top: 55px;
 }
 #section0 .div2 .cardItems div {
     display: block;
