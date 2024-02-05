@@ -72,7 +72,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 2;
-    filter: blur(5);
+    display: none;
 }
 header .div {
      display: flex;
