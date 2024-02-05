@@ -57,6 +57,10 @@ function showMenu() {
         }
     }        
 }
+let loadContainer = document.querySelector('.loadContainer')
+ window.addEventListener('load', () => {
+     setTimeout( () => loadContainer.style.display = 'none', 2500)
+ })
 
 var submitFormBtn1 = document.querySelector('#formBtn1')
 var submitFormBtn2 = document.querySelector('#formBtn2')
@@ -95,11 +99,4 @@ submitFormBtn2.addEventListener('click', () => {
          }
      
     }         
- })
-
-let loadContainer = document.querySelector('.loadContainer')
-loadContainer.style.display = 'none'
- window.addEventListener('load', () => {
-     
-     setTimeout( () => loadContainer.style.display = 'none', 2500)
  })
