@@ -27,6 +27,7 @@
            width: 100%;
            height: 100vh;
            overflow: hidden;
+           top: 0;
            position: fixed;
            z-index: 100;
            background: linear-gradient(55deg, brown, grey);
@@ -72,7 +73,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 2;
-    display: none;
+   
 }
 header .div {
      display: flex;
