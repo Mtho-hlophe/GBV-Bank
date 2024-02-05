@@ -97,7 +97,7 @@ submitFormBtn2.addEventListener('click', () => {
     }         
  })
 
-let loadContainer = document.querySelector('.lloadContainer')
+let loadContainer = document.querySelector('.loadContainer')
 loadContainer.style.display = 'none'
  window.addEventListener('load', () => {
      
