@@ -174,6 +174,10 @@ function Netherlands() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        netherlandsPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         netherlands.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -194,7 +198,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+      //  console.error(error)
     }
 }
 }
@@ -209,6 +213,10 @@ function Italy() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        italyPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         italy.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -228,7 +236,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+       // console.error(error)
     }
 }
 }
@@ -243,6 +251,10 @@ function Germany() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        germanyPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         germany.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -262,7 +274,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+        //console.error(error)
     }
 }
 }
@@ -277,6 +289,10 @@ function England() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        englandPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         england.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -296,7 +312,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+       // console.error(error)
     }
 }
 }
@@ -311,6 +327,10 @@ function Nigeria() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        nigeriaPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         nigeria.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -330,7 +350,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+       // console.error(error)
     }
 }
 }
@@ -345,6 +365,10 @@ function Morrocco() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        morroccoPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         morrocco.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -364,7 +388,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+       // console.error(error)
     }
 }
 }
@@ -379,6 +403,10 @@ function Brazil() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        brazilPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         brazil.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -398,7 +426,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+        //console.error(error)
     }
 }
 }
@@ -413,6 +441,10 @@ function Colombia() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        colombiaPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         colombia.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -432,7 +464,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+        //console.error(error)
     }
 }
 }
@@ -447,6 +479,10 @@ function Peru() {
 function jsonFunc() {
     let apiObject = JSON.parse(this.response)
     try{
+        peruPer.forEach( (flag) => {
+            flag.innerHTML = `<h4>${apiObject.response[0].cp}</h4>`
+            flag.style.color = 'orange'                                  
+        })
         peru.forEach((flag) => {       
           
             flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
@@ -466,7 +502,7 @@ function jsonFunc() {
         
     }
     catch(error) {
-        console.error(error)
+        //console.error(error)
     }
 }
 }
