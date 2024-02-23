@@ -186,7 +186,7 @@ function jsonFunc() {
 }
 Netherlands()
 
-function italy() {
+function Italy() {
     let forexObject = new XMLHttpRequest()
     forexObject.onload = jsonFunc
     forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/EUR&access_key=YWBulY6jbkSe1jzdOEtfI5')
@@ -218,9 +218,9 @@ function jsonFunc() {
     }
 }
 }
-italy()
+Italy()
 
-function germany() {
+function Germany() {
     let forexObject = new XMLHttpRequest()
     forexObject.onload = jsonFunc
     forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/EUR&access_key=YWBulY6jbkSe1jzdOEtfI5')
@@ -252,9 +252,9 @@ function jsonFunc() {
     }
 }
 }
-germany()
+Germany()
 
-function england() {
+function England() {
     let forexObject = new XMLHttpRequest()
     forexObject.onload = jsonFunc
     forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/GBP&access_key=YWBulY6jbkSe1jzdOEtfI5')
@@ -286,9 +286,9 @@ function jsonFunc() {
     }
 }
 }
-england()
+England()
 
-function nigeria() {
+function Nigeria() {
     let forexObject = new XMLHttpRequest()
     forexObject.onload = jsonFunc
     forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/NGN&access_key=YWBulY6jbkSe1jzdOEtfI5')
@@ -320,9 +320,9 @@ function jsonFunc() {
     }
 }
 }
-nigeria()
+Nigeria()
 
-function morrocco() {
+function Morrocco() {
     let forexObject = new XMLHttpRequest()
     forexObject.onload = jsonFunc
     forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/MAD&access_key=YWBulY6jbkSe1jzdOEtfI5')
@@ -354,7 +354,110 @@ function jsonFunc() {
     }
 }
 }
-morrocco()
+Brazil()
+
+function Morrocco() {
+    let forexObject = new XMLHttpRequest()
+    forexObject.onload = jsonFunc
+    forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/&BRLaccess_key=YWBulY6jbkSe1jzdOEtfI5')
+    forexObject.send()
+
+function jsonFunc() {
+    let apiObject = JSON.parse(this.response)
+    try{
+        brazil.forEach((flag) => {       
+          
+            flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
+            let open = Number(apiObject.response[0].o)
+            let current = Number(apiObject.response[0].c)
+                       
+            if( current < open) {
+                flag.style.color = 'red'              
+            }
+            else if( current == open) {
+                flag.style.color = 'grey'
+            }
+            else{
+                flag.style.color = 'green'
+            }
+        })
+        
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+}
+Brazil()
+
+function Colombia() {
+    let forexObject = new XMLHttpRequest()
+    forexObject.onload = jsonFunc
+    forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/COP&access_key=YWBulY6jbkSe1jzdOEtfI5')
+    forexObject.send()
+
+function jsonFunc() {
+    let apiObject = JSON.parse(this.response)
+    try{
+        colombia.forEach((flag) => {       
+          
+            flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
+            let open = Number(apiObject.response[0].o)
+            let current = Number(apiObject.response[0].c)
+                       
+            if( current < open) {
+                flag.style.color = 'red'              
+            }
+            else if( current == open) {
+                flag.style.color = 'grey'
+            }
+            else{
+                flag.style.color = 'green'
+            }
+        })
+        
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+}
+Colombia()
+
+function Peru() {
+    let forexObject = new XMLHttpRequest()
+    forexObject.onload = jsonFunc
+    forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/PEN&access_key=YWBulY6jbkSe1jzdOEtfI5')
+    forexObject.send()
+
+function jsonFunc() {
+    let apiObject = JSON.parse(this.response)
+    try{
+        peru.forEach((flag) => {       
+          
+            flag.innerHTML = `<h3>${apiObject.response[0].c}</h3>`                      
+            let open = Number(apiObject.response[0].o)
+            let current = Number(apiObject.response[0].c)
+                       
+            if( current < open) {
+                flag.style.color = 'red'              
+            }
+            else if( current == open) {
+                flag.style.color = 'grey'
+            }
+            else{
+                flag.style.color = 'green'
+            }
+        })
+        
+    }
+    catch(error) {
+        console.error(error)
+    }
+}
+}
+Peru()
+
 submitFormBtn2.addEventListener('click', () => {
     
     if (validateForm()) {
