@@ -150,6 +150,20 @@ submitFormBtn1.addEventListener('click', () => {
    var italy = document.querySelectorAll('#italy')
    var germany = document.querySelectorAll('#germany')
    var nigeria = document.querySelectorAll('#nigeria')
+   var morrocco = document.querySelectorAll('#morrocco')
+   var brazil = document.querySelectorAll('#brazil')
+   var colombia = document.querySelectorAll('#colombia')
+   var peru = document.querySelectorAll('#peru')
+
+   var netherlandsPer = document.querySelectorAll('.netherlands')
+   var englandPer = document.querySelectorAll('.england')
+   var italyPer = document.querySelectorAll('.italy')
+   var germanyPer = document.querySelectorAll('.germany')
+   var nigeriaPer = document.querySelectorAll('.nigeria')
+   var morroccoPer = document.querySelectorAll('.morrocco')
+   var brazilPer = document.querySelectorAll('.brazil')
+   var colombiaPer = document.querySelectorAll('.colombia')
+   var peruPer = document.querySelectorAll('.peru')
  
 function Netherlands() {
     let forexObject = new XMLHttpRequest()
@@ -354,9 +368,9 @@ function jsonFunc() {
     }
 }
 }
-Brazil()
+Morrocco()
 
-function Morrocco() {
+function Brazil() {
     let forexObject = new XMLHttpRequest()
     forexObject.onload = jsonFunc
     forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/&BRLaccess_key=YWBulY6jbkSe1jzdOEtfI5')
