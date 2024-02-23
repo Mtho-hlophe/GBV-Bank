@@ -373,7 +373,7 @@ Morrocco()
 function Brazil() {
     let forexObject = new XMLHttpRequest()
     forexObject.onload = jsonFunc
-    forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/&BRLaccess_key=YWBulY6jbkSe1jzdOEtfI5')
+    forexObject.open('get', 'https://fcsapi.com/api-v3/forex/latest?symbol=USD/BRL&access_key=YWBulY6jbkSe1jzdOEtfI5')
     forexObject.send()
 
 function jsonFunc() {
