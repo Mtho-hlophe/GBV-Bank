@@ -81,7 +81,8 @@ header .div {
 }
 header img {
     width: 80px;
-    height: 50px;   
+    height: 50px; 
+    cursor: pointer;
 }
 #menu {
     width: 100%;
@@ -499,6 +500,7 @@ footer .social-links {
 #logo {
     width: 200px; 
     height:50px;
+    cursor: pointer;
 }
 
 /* mobile styling, maybe some tablets too */
