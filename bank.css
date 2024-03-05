@@ -138,6 +138,7 @@ header img {
     border-radius: 20px;
     font-size: 1.3rem;
     font-weight: 600;
+    cursor: pointer;
 }
 #setAppointmentDiv input {
     padding: 10px;
@@ -190,6 +191,7 @@ header img {
     border-radius: 10px;
     font-weight: 600;
     transition: .5s;
+    cursor: pointer;
 }
 #appointmentBtn:hover {
     background-color: blue;
@@ -205,13 +207,15 @@ header img {
     color: white;
     padding: 20px 30px;
     border-radius: 6px;
-    margin-bottom: 5%;    
+    margin-bottom: 5%;   
+    cursor: pointer;
 }
 #btn2 {
     background-color: white;
     padding: 20px 30px;
     color: black;
     border-radius: 6px;
+    cursor: pointer;
 }
 #section1 .div1 {
     text-align: center;
