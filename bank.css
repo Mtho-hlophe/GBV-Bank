@@ -80,7 +80,7 @@ header .div {
      justify-content: space-between;
 }
 header img {
-    width: 100px;
+    width: 80px;
     height: 50px;   
 }
 #menu {
@@ -498,7 +498,7 @@ footer .social-links {
 }
 #logo {
     width: 200px; 
-    height:70px;
+    height:50px;
 }
 
 /* mobile styling, maybe some tablets too */
